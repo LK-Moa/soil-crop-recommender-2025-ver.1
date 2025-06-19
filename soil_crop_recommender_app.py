@@ -6,7 +6,7 @@ st.set_page_config(page_title="작물 추천 시스템", layout="centered")
 
 @st.cache_resource
 def load_model():
-    return joblib.load("crop_model_balanced.pkl")
+    return joblib.load("rf_crop_model.pkl")  # 파일명 반드시 일치
 
 @st.cache_data
 def load_fertilizer_table():
