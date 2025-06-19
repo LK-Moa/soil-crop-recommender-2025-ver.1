@@ -93,3 +93,5 @@ if st.session_state.selected_crop:
 
     except Exception as e:
         st.error(f"시비처방 출력 오류: {e}")
+
+st.write("🔥 로딩된 모델 타입:", type(model))
